@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Event</title>
+</head>
+<body>
+    <h1>Hello, world!</h1>
+    <button>변경</button>
+</body>
+<script>
+    const changeHTML = () => {
+        let elements = document.getElementsByTagName('h1');
+        let heading = elements[0];
+
+        heading.innerHTML = 'Hello, JavaScript!';        
+    };
+
+    let btnElements = document.getElementsByTagName('button');
+    let updateButton = btnElements[0];
+
+    updateButton.addEventListener('click', changeHTML);
+</script>
+</html>
